@@ -7,6 +7,7 @@ var uglify = require('gulp-uglify');
 var useref = require('gulp-useref');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
+var cache = require('gulp-cached');
 
 
 gulp.task('connect', function() {
@@ -35,13 +36,15 @@ gulp.task('build:dist', function () {
 
 gulp.task('styles', function() {
 
-	return gulp.src('assets/css/**/*.scss')
+	return gulp.src('assets/css/**/*.scss')	
 	.pipe(sourcemaps.init())
 	.pipe(sass().on('error', sass.logError))
+
 	.pipe(autoprefixer({
 		browsers: ['last 2 versions', 'IE 8', 'IE 9', 'IE 10', 'IE 11']
 	}))
 	.pipe(sourcemaps.write())
+	.pipe(cache('linting'))
 	.pipe(gulp.dest('assets/css/'))
 	.pipe(connect.reload());
 });

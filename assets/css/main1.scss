@@ -13,21 +13,21 @@ body {
   }
 }
 
-
+ 
 header {
   h1 {
     font-size:26px; margin-bottom:26px;
   }
 }
 div[role="main"] {  
-  border:3px solid $color2;
+  border:2px solid $color2;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   padding:$border-radius;
   margin-bottom:25px; 
   
   ul {
-    padding-top:14px;
+    padding-top:15px;
   }
   li {
     color:$fontcolor1;
