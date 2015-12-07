@@ -19,7 +19,16 @@ gulp.task('connect', function() {
 
 gulp.task('build:dist', function () {
 
-	var assets = useref.assets();	
+	var assets = useref.assets();
+
+	gulp.src('assets/css/**/*.scss')	
+	.pipe(sourcemaps.init())
+	.pipe(sass().on('error', sass.logError))
+	.pipe(autoprefixer({
+		browsers: ['last 2 versions', 'IE 8', 'IE 9', 'IE 10', 'IE 11']
+	}))
+	.pipe(sourcemaps.write())	
+	.pipe(gulp.dest('assets/css/'));	
 
 	gulp.src(['assets/plugins/bootstrap/fonts/*']).pipe(gulp.dest('dist/assets/fonts'));
 
@@ -39,7 +48,6 @@ gulp.task('styles', function() {
 	return gulp.src('assets/css/**/*.scss')	
 	.pipe(sourcemaps.init())
 	.pipe(sass().on('error', sass.logError))
-
 	.pipe(autoprefixer({
 		browsers: ['last 2 versions', 'IE 8', 'IE 9', 'IE 10', 'IE 11']
 	}))

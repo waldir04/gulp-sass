@@ -1,0 +1,9 @@
+.parent {
+  height: 200px;
+  width: 200px;
+  background-color: black; }
+  .parent .child {
+    color: green;
+    font-weight: bold; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3N0ZGluIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0MsY0FBYztFQUNkLGFBQWE7RUFDYix3QkFBd0IsRUFLeEI7RUFSRDtJQUtFLGFBQWE7SUFDYixrQkFBa0IsRUFDbEIiLCJmaWxlIjoibWFpbi5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucGFyZW50e1xyXG5cdGhlaWdodDogMjAwcHg7XHJcblx0d2lkdGg6IDIwMHB4O1xyXG5cdGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG5cdC5jaGlsZHtcclxuXHRcdGNvbG9yOiBncmVlbjtcclxuXHRcdGZvbnQtd2VpZ2h0OiBib2xkO1xyXG5cdH1cclxufSAiXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0= */

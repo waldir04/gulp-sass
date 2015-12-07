@@ -4,7 +4,7 @@ $fontcolor1: #333;
 $fontcolor2: #9c4228;
 $border-radius: 7px; 
 
-body {
+body { 
   text-align: center;
   > #container {
     text-align:left;
@@ -34,6 +34,6 @@ div[role="main"] {
     margin-bottom:12px;
   }
   h1 {
-    font-size:26px; margin-bottom:26px;color: red; transform: scale(0.5);
+    font-size:26px; margin-bottom:26px;color: yellow; transform: scale(0.5);
   }
 }
