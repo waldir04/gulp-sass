@@ -20,6 +20,8 @@ gulp.task('build:dist', function () {
 
 	var assets = useref.assets();	
 
+	gulp.src(['assets/plugins/bootstrap/fonts/*']).pipe(gulp.dest('dist/assets/fonts'));
+
 	return gulp.src('*.html')
 	.pipe(assets)
 	.pipe(sourcemaps.init())
@@ -32,6 +34,7 @@ gulp.task('build:dist', function () {
 });
 
 gulp.task('styles', function() {
+
 	return gulp.src('assets/css/**/*.scss')
 	.pipe(sourcemaps.init())
 	.pipe(sass().on('error', sass.logError))
