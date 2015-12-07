@@ -1,0 +1,39 @@
+$color1: #63bdd7;
+$color2: #9c4228;
+$fontcolor1: #333;
+$fontcolor2: #9c4228;
+$border-radius: 7px; 
+
+body {
+  text-align: center;
+  > #container {
+    text-align:left;
+    margin:0 auto;
+    width:500px;
+  }
+}
+
+
+header {
+  h1 {
+    font-size:26px; margin-bottom:26px;
+  }
+}
+div[role="main"] {  
+  border:3px solid $color2;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding:$border-radius;
+  margin-bottom:25px; 
+  
+  ul {
+    padding-top:14px;
+  }
+  li {
+    color:$fontcolor1;
+    margin-bottom:12px;
+  }
+  h1 {
+    font-size:26px; margin-bottom:26px;color: red; transform: scale(0.5);
+  }
+}
